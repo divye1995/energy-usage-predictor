@@ -1,7 +1,7 @@
 # Energy Forecast & Comparator
 
-[![Deploy to GitHub Pages](https://github.com/your-username/energy-calc-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-username/energy-calc-app/actions/workflows/deploy.yml)
-[![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://your-username.github.io/my-energy-app/)
+[![Deploy to GitHub Pages](https://github.com/divye1995/energy-usage-predictor/actions/workflows/deploy.yml/badge.svg)](https://github.com/divye1995/energy-usage-predictor/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://divye1995.github.io/energy-usage-predictor/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18+-blue.svg)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-5+-purple.svg)](https://vitejs.dev/)
@@ -168,17 +168,18 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 
 1. **Fork or Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/energy-calc-app.git
-   cd energy-calc-app
+   git clone https://github.com/divye1995/energy-usage-predictor.git
+   cd energy-usage-predictor
    ```
 
 2. **Enable GitHub Pages**
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **GitHub Actions**
+   - Under **Source**, select **Deploy from a branch**
+   - Select **gh-pages** branch and **/ (root)** folder
 
 3. **Update Repository Name (if different)**
-   - If your repository name is not `my-energy-app`, update the `base` path in `vite.config.js`:
+   - If your repository name is not `energy-usage-predictor`, update the `base` path in `vite.config.js`:
    ```javascript
    base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
    ```
@@ -191,7 +192,7 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
    ```
 
 5. **Access Your Deployed App**
-   - Your app will be available at: `https://your-username.github.io/my-energy-app/`
+   - Your app will be available at: `https://divye1995.github.io/energy-usage-predictor/`
    - Deployment typically takes 2-3 minutes
 
 #### GitHub Actions Workflow
@@ -362,7 +363,7 @@ SOFTWARE.
 
 ## 🔗 Useful Links
 
-- **Live Demo**: `https://your-username.github.io/my-energy-app/` (after deployment)
+- **Live Demo**: [https://divye1995.github.io/energy-usage-predictor/](https://divye1995.github.io/energy-usage-predictor/) (after deployment)
 - **React Documentation**: [https://react.dev](https://react.dev)
 - **Vite Documentation**: [https://vitejs.dev](https://vitejs.dev)
 - **Tailwind CSS**: [https://tailwindcss.com](https://tailwindcss.com)
