@@ -175,8 +175,7 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 2. **Enable GitHub Pages**
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **Deploy from a branch**
-   - Select **gh-pages** branch and **/ (root)** folder
+   - Under **Source**, select **GitHub Actions**
 
 3. **Update Repository Name (if different)**
    - If your repository name is not `energy-usage-predictor`, update the `base` path in `vite.config.js`:
