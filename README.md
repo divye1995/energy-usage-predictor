@@ -1,5 +1,11 @@
 # Energy Forecast & Comparator
 
+[![Deploy to GitHub Pages](https://github.com/your-username/energy-calc-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/your-username/energy-calc-app/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/demo-live-green.svg)](https://your-username.github.io/my-energy-app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5+-purple.svg)](https://vitejs.dev/)
+
 A comprehensive React-based web application for energy cost projection and comparison with AI-powered insights. Calculate, visualize, and compare electricity costs across different tariff scenarios with seasonal adjustments and intelligent forecasting.
 
 ![Energy Calculator](https://via.placeholder.com/800x400?text=Energy+Forecast+%26+Comparator)
@@ -65,6 +71,11 @@ Open [http://localhost:5173](http://localhost:5173) to view the application in y
 ### 4. Build for Production
 ```bash
 npm run build
+```
+
+### 5. Preview Production Build
+```bash
+npm run preview
 ```
 
 ## 🔑 Setting Up AI Features
@@ -146,6 +157,74 @@ Energy calculations can be customized by modifying:
 Customize AI responses by modifying the prompts in:
 - `getUsageTips()` function for usage recommendations
 - `getComparisonSummary()` function for scenario analysis
+
+## 🚀 Deployment
+
+### GitHub Pages (Automatic)
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+#### Setup Instructions:
+
+1. **Fork or Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/energy-calc-app.git
+   cd energy-calc-app
+   ```
+
+2. **Enable GitHub Pages**
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+
+3. **Update Repository Name (if different)**
+   - If your repository name is not `my-energy-app`, update the `base` path in `vite.config.js`:
+   ```javascript
+   base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
+   ```
+
+4. **Push to Main Branch**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+5. **Access Your Deployed App**
+   - Your app will be available at: `https://your-username.github.io/my-energy-app/`
+   - Deployment typically takes 2-3 minutes
+
+#### GitHub Actions Workflow
+
+The deployment is handled by `.github/workflows/deploy.yml` which:
+- ✅ Triggers on every push to `main` branch
+- ✅ Installs Node.js and dependencies
+- ✅ Builds the production version
+- ✅ Deploys to GitHub Pages automatically
+- ✅ Supports manual deployment from Actions tab
+
+#### Manual Deployment
+
+You can also trigger deployment manually:
+1. Go to **Actions** tab in your GitHub repository
+2. Select **Deploy to GitHub Pages** workflow
+3. Click **Run workflow** → **Run workflow**
+
+### Other Deployment Options
+
+#### Vercel
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+#### Netlify
+1. Build the project: `npm run build`
+2. Drag the `dist` folder to [Netlify Drop](https://app.netlify.com/drop)
+
+#### Traditional Web Hosting
+1. Run `npm run build`
+2. Upload the contents of `dist` folder to your web server
 
 ## 🤝 Contributing
 
@@ -283,11 +362,13 @@ SOFTWARE.
 
 ## 🔗 Useful Links
 
+- **Live Demo**: `https://your-username.github.io/my-energy-app/` (after deployment)
 - **React Documentation**: [https://react.dev](https://react.dev)
 - **Vite Documentation**: [https://vitejs.dev](https://vitejs.dev)
 - **Tailwind CSS**: [https://tailwindcss.com](https://tailwindcss.com)
 - **Chart.js**: [https://www.chartjs.org](https://www.chartjs.org)
 - **Google Gemini API**: [https://ai.google.dev/docs](https://ai.google.dev/docs)
+- **GitHub Pages Documentation**: [https://docs.github.com/en/pages](https://docs.github.com/en/pages)
 
 ---
 
