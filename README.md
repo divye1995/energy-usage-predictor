@@ -8,11 +8,12 @@
 
 A comprehensive React-based web application for energy cost projection and comparison with AI-powered insights. Calculate, visualize, and compare electricity costs across different tariff scenarios with seasonal adjustments and intelligent forecasting.
 
-![Energy Calculator](https://via.placeholder.com/800x400?text=Energy+Forecast+%26+Comparator)
+[Energy Calculator](https://divye1995.github.io/energy-usage-predictor/)
 
 ## 🚀 Features
 
 ### Core Functionality
+
 - **Smart Tariff Calculation**: Input current rates and automatically calculate future tariff bands with seasonal adjustments
 - **Usage Projection**: Project monthly energy consumption based on historical patterns
 - **Cost Visualization**: Interactive charts showing usage and cost projections over time
@@ -20,6 +21,7 @@ A comprehensive React-based web application for energy cost projection and compa
 - **Fixed vs Variable Rates**: Toggle between fixed rates and seasonal tariff bands
 
 ### Advanced Features
+
 - **AI-Powered Insights**: Get personalized energy-saving tips using Google Gemini AI
 - **Scenario Comparison**: Compare multiple saved sessions with detailed analysis
 - **Seasonal Intelligence**: Automatic rate adjustments for winter (10% higher) and summer (5% lower) months
@@ -27,6 +29,7 @@ A comprehensive React-based web application for energy cost projection and compa
 - **Export & Import**: Local storage for session persistence
 
 ### AI Integration
+
 - **Usage Tips**: AI-generated recommendations for cost reduction
 - **Comparison Analysis**: Intelligent summary of scenario differences
 - **Markdown Formatting**: Rich text AI responses with proper formatting
@@ -44,6 +47,7 @@ A comprehensive React-based web application for energy cost projection and compa
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
+
 - Node.js (version 16.0 or higher)
 - npm (version 7.0 or higher)
 - A modern web browser
@@ -51,17 +55,20 @@ Before you begin, ensure you have the following installed:
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/your-username/energy-calc-app.git
-cd energy-calc-app/my-energy-app
+git clone https://github.com/divye1995/energy-usage-predictor.git
+cd energy-usage-predictor
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
@@ -69,11 +76,13 @@ npm run dev
 Open [http://localhost:5173](http://localhost:5173) to view the application in your browser.
 
 ### 4. Build for Production
+
 ```bash
 npm run build
 ```
 
 ### 5. Preview Production Build
+
 ```bash
 npm run preview
 ```
@@ -83,6 +92,7 @@ npm run preview
 To use the AI-powered insights:
 
 1. **Get a Gemini API Key**:
+
    - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
    - Create a free account and generate an API key
    - Copy your API key
@@ -95,21 +105,25 @@ To use the AI-powered insights:
 ## 📚 Usage Guide
 
 ### Basic Setup
+
 1. **Set Current Month**: Select the current month for seasonal calculations
 2. **Choose Rate Type**: Toggle between fixed rates or variable tariff bands
 3. **Input Usage Pattern**: Enter monthly usage projection (comma-separated kWh values)
 4. **Configure Peak Usage**: Set the percentage of usage during peak hours
 
 ### Tariff Configuration
+
 - **Fixed Rates**: Enter consistent peak, off-peak, and standing charge rates
 - **Variable Bands**: Input current tariff rates, and the app automatically calculates future bands with seasonal adjustments
 
 ### Session Management
+
 - **Save Sessions**: Name and save your current configuration
 - **Load Sessions**: Select from saved sessions to quickly switch scenarios
 - **Compare Sessions**: Analyze differences between multiple scenarios
 
 ### AI Insights
+
 - **Usage Tips**: Get personalized recommendations for reducing energy costs
 - **Comparison Analysis**: Understand which scenario is more cost-effective and why
 
@@ -142,19 +156,25 @@ my-energy-app/
 ## 🎨 Customization
 
 ### Styling
+
 The application uses Tailwind CSS for styling. Customize the appearance by:
+
 - Modifying `tailwind.config.js`
 - Updating color schemes in `App.jsx`
 - Adding custom CSS classes
 
 ### Calculations
+
 Energy calculations can be customized by modifying:
+
 - Seasonal multipliers (currently 1.1 for winter, 0.95 for summer)
 - Base rate increases (currently 0.5p per quarter)
 - Days in month calculations
 
 ### AI Prompts
+
 Customize AI responses by modifying the prompts in:
+
 - `getUsageTips()` function for usage recommendations
 - `getComparisonSummary()` function for scenario analysis
 
@@ -167,23 +187,28 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 #### Setup Instructions:
 
 1. **Fork or Clone the Repository**
+
    ```bash
    git clone https://github.com/divye1995/energy-usage-predictor.git
    cd energy-usage-predictor
    ```
 
 2. **Enable GitHub Pages**
+
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
    - Under **Source**, select **GitHub Actions**
 
 3. **Update Repository Name (if different)**
+
    - If your repository name is not `energy-usage-predictor`, update the `base` path in `vite.config.js`:
+
    ```javascript
    base: process.env.NODE_ENV === 'production' ? '/your-repo-name/' : '/',
    ```
 
 4. **Push to Main Branch**
+
    ```bash
    git add .
    git commit -m "Initial commit"
@@ -197,6 +222,7 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 #### GitHub Actions Workflow
 
 The deployment is handled by `.github/workflows/deploy.yml` which:
+
 - ✅ Triggers on every push to `main` branch
 - ✅ Installs Node.js and dependencies
 - ✅ Builds the production version
@@ -206,6 +232,7 @@ The deployment is handled by `.github/workflows/deploy.yml` which:
 #### Manual Deployment
 
 You can also trigger deployment manually:
+
 1. Go to **Actions** tab in your GitHub repository
 2. Select **Deploy to GitHub Pages** workflow
 3. Click **Run workflow** → **Run workflow**
@@ -213,16 +240,19 @@ You can also trigger deployment manually:
 ### Other Deployment Options
 
 #### Vercel
+
 ```bash
 npm install -g vercel
 vercel --prod
 ```
 
 #### Netlify
+
 1. Build the project: `npm run build`
 2. Drag the `dist` folder to [Netlify Drop](https://app.netlify.com/drop)
 
 #### Traditional Web Hosting
+
 1. Run `npm run build`
 2. Upload the contents of `dist` folder to your web server
 
@@ -231,26 +261,31 @@ vercel --prod
 We welcome contributions! Please follow these steps:
 
 1. **Fork the Repository**
+
    ```bash
    git fork https://github.com/your-username/energy-calc-app.git
    ```
 
 2. **Create a Feature Branch**
+
    ```bash
    git checkout -b feature/amazing-feature
    ```
 
 3. **Make Changes**
+
    - Write clean, documented code
    - Follow existing code style
    - Add tests if applicable
 
 4. **Commit Changes**
+
    ```bash
    git commit -m 'Add amazing feature'
    ```
 
 5. **Push to Branch**
+
    ```bash
    git push origin feature/amazing-feature
    ```
@@ -261,6 +296,7 @@ We welcome contributions! Please follow these steps:
    - Reference any related issues
 
 ### Development Guidelines
+
 - Follow React best practices
 - Use meaningful variable and function names
 - Add comments for complex logic
@@ -270,6 +306,7 @@ We welcome contributions! Please follow these steps:
 ## 🐛 Bug Reports
 
 Found a bug? Please create an issue with:
+
 - Clear description of the problem
 - Steps to reproduce
 - Expected vs actual behavior
@@ -279,6 +316,7 @@ Found a bug? Please create an issue with:
 ## 💡 Feature Requests
 
 Have an idea for improvement? Open an issue with:
+
 - Clear description of the feature
 - Use case and benefits
 - Possible implementation approach
@@ -289,30 +327,40 @@ Have an idea for improvement? Open an issue with:
 In the project directory, you can run:
 
 ### `npm run dev`
+
 Runs the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
 ### `npm run build`
+
 Builds the app for production to the `dist` folder.
 
 ### `npm run preview`
+
 Locally preview the production build.
 
 ### `npm run lint`
+
 Run ESLint to check for code quality issues.
 
 ## 🔧 Configuration
 
 ### Vite Configuration
+
 The project uses Vite for fast development and building. Key plugins:
+
 - `@vitejs/plugin-react` - React support with Fast Refresh
 
 ### Tailwind Configuration
+
 Customized with:
+
 - Typography plugin for prose styling
 - Custom color schemes for AI responses
 
 ### ESLint Configuration
+
 For code quality and consistency. To expand ESLint configuration for production:
+
 - Consider adding TypeScript support
 - Enable type-aware lint rules
 - Add additional ESLint plugins as needed
